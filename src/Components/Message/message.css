@@ -9,7 +9,8 @@
     font-weight: bold;
     color: rgb(47, 255, 75);
 
-    padding: 0.25em 0 0.25em 0.5em;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
 }
 
 .msgWrap .textContent{
@@ -17,4 +18,11 @@
     padding-block: 0.25em;
     padding-inline-start: 0.5em;
 
+}
+
+.msgWrap .timeStamp{
+    position: relative;
+    right: -0.75em;
+    font-size: 0.8em;
+    color: rgb(99, 99, 99);
 }

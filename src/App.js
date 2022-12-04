@@ -11,7 +11,6 @@ export const ACTIONS = {
 };
 
 function reducer(state, action) {
-  console.log(state, action);
   switch (action.type) {
     case ACTIONS.ADDMSG:
       return [...state, action.payload];

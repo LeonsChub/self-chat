@@ -1,17 +1,32 @@
 import './message.css'
 import { Card } from 'react-bootstrap'
-function Message({sender,content}) {
+function Message({msgData}) {
+
+  function formatTime(time){
+    let hours = time.getHours();
+    let mins = time.getMinutes();
+
+    return `${hours < 10 ? `0${hours}`: hours}:${mins}`
+  }
+
+
   return (
         <Card className="msgWrap">
 
           <Card.Header className='textSender'>
-            {sender}
+            {msgData.sender}
           </Card.Header>
 
           <Card.Body className='textContent'>
-            <Card.Text>
-              {content}
-            </Card.Text>
+            <div className="d-flex align-items-end">
+              <Card.Text className='m-0 p-1'>
+                {msgData.content}
+              </Card.Text>
+
+              <Card.Text className='timeStamp'>
+                {formatTime(msgData.timeSent)}
+              </Card.Text>
+            </div>
           </Card.Body>
         </Card>
   )

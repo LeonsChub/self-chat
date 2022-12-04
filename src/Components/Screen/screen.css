@@ -1,5 +1,5 @@
 #screen{
-    overflow-y: scroll;
+    overflow-y: auto;
 
     background-color: rgb(36, 36, 38);
     border-radius: 1.5em;
