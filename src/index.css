@@ -28,6 +28,9 @@ code {
 #main-content > #screen{
   flex: 3 0 50vh;
 }
-#main-content > #keyboard{
+#main-content > #keyboardWrap{
   flex: 1 0 30vh;
+}
+#keyboard{
+  height: 90%;
 }

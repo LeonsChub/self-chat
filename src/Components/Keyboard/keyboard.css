@@ -1,4 +1,6 @@
 #keyboard{
+    position: relative;
+
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -31,4 +33,16 @@
 
 #botRow{
     padding-inline: 11%;
+}
+#keyboardWrap{
+    display: flex;
+}
+#keyboardWrap > #keyboard{
+    flex: 1 0 90%;
+}
+#keyboardWrap > #keyboardDrawer{
+    flex: 1 0 10%;
+    height: 90%;
+    background-color: #345071;
+
 }

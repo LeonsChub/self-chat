@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Button  from 'react-bootstrap/Button'
 import KeyCell from './KeyCell/KeyCell';
+import {BsFillCaretRightFill} from 'react-icons/bs'
 import './keyboard.css'
 
 
@@ -21,11 +22,20 @@ function Keyboard(props) {
   }
 
   return (
-    <div id="keyboard" className = 'my-1'>
-
-        <div className="keyRow" id='topRow'>{arrToBtn(topRow)}</div>
-        <div className="keyRow" id='midRow'>{arrToBtn(midRow)}</div>
-        <div className="keyRow" id='botRow'>{arrToBtn(botRow)}</div>
+    <div id="keyboardWrap">
+      <div id="keyboard">
+          <div className="keyRow" id='topRow'>{arrToBtn(topRow)}</div>
+          <div className="keyRow" id='midRow'>{arrToBtn(midRow)}</div>
+          <div className="keyRow" id='botRow'>{arrToBtn(botRow)}</div>
+          <button id='expandBtn'></button>
+      </div>
+      <div id="keyboardDrawer">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
     </div>
   )
 }

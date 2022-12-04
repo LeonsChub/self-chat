@@ -6,7 +6,7 @@ function Message({msgData}) {
     let hours = time.getHours();
     let mins = time.getMinutes();
 
-    return `${hours < 10 ? `0${hours}`: hours}:${mins}`
+    return `${hours < 10 ? `0${hours}`: hours}:${mins< 10 ? `0${mins}`: mins}`
   }
 
 
@@ -19,7 +19,7 @@ function Message({msgData}) {
 
           <Card.Body className='textContent'>
             <div className="d-flex align-items-end">
-              <Card.Text className='m-0 p-1'>
+              <Card.Text className='m-0'>
                 {msgData.content}
               </Card.Text>
 
