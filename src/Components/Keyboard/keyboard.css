@@ -1,0 +1,34 @@
+#keyboard{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #1b2838;
+    border-radius: 5px;
+}
+
+.keyRow{
+    width: 80%;
+    height: 25%;
+    margin-inline: auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.keyCell{
+    width: max(4em, 9%);
+    height: 90%;
+
+    margin-inline: 2px;
+
+}
+
+#midRow{
+    padding-inline: 3%;
+}
+
+#botRow{
+    padding-inline: 11%;
+}
